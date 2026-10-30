@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khám phá An Giang</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#244238;line-height:1.7}
+header{background:#10533f;color:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+header h2{font-size:22px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#ffd36a}
+.hero{min-height:480px;display:flex;align-items:center;padding:70px 8%;color:white;background:linear-gradient(90deg,#082d25dd,#082d2530),url('https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%BAi%20%E1%BB%9F%20An%20Giang.jpg?width=1600') center/cover}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.15}
+.hero p{max-width:650px;margin:20px 0;font-size:18px}
+.btn{display:inline-block;background:#ffd36a;color:#174b3b;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:bold}
+section{padding:60px 7%}
+.title{text-align:center;color:#146448;font-size:32px;margin-bottom:15px}
+.intro{text-align:center;max-width:850px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 18px #163c3020}
+.card img{width:100%;height:230px;object-fit:cover;display:block}
+.card-content{padding:18px}
+.card h3{color:#146448;margin-bottom:8px}
+.card p{font-size:14px;color:#52675f}
+.tag{display:inline-block;background:#e3f3e9;color:#176445;padding:3px 12px;border-radius:20px;font-size:12px;margin-bottom:8px}
+.about{background:#eff7f1}
+.food{background:#fff8e8}
+.tips{background:#eff7f1}
+ul{padding-left:22px}
+li{margin:8px 0}
+.sources{font-size:12px;color:#64756d;margin-top:12px}
+.sources a{color:#176c54}
+footer{background:#103b31;color:white;text-align:center;padding:30px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){.grid{grid-template-columns:1fr}header{justify-content:center}nav{justify-content:center}.hero{min-height:400px}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>🌿 KHÁM PHÁ AN GIANG</h2>
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#about">Giới thiệu</a>
+<a href="#places">Địa điểm</a>
+<a href="#culture">Văn hóa</a>
+<a href="#food">Ẩm thực</a>
+<a href="#tips">Kinh nghiệm</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div>
+<h1>Khám phá<br>An Giang thân thương</h1>
+<p>Về với vùng đất miền Tây Nam Bộ, nơi có núi non hùng vĩ, rừng tràm xanh mát, di tích văn hóa đặc sắc và nền ẩm thực phong phú.</p>
+<a class="btn" href="#places">Khám phá ngay →</a>
+</div>
+</section>
+
+<section id="about" class="about">
+<h2 class="title">Giới thiệu về An Giang</h2>
+<div class="intro">
+<p>An Giang là vùng đất thuộc Đồng bằng sông Cửu Long, nổi bật với cảnh quan sông nước, vùng Thất Sơn, các công trình tín ngưỡng và sự đa dạng văn hóa. Đây là địa phương có nhiều tiềm năng phát triển du lịch sinh thái, văn hóa và tâm linh.</p>
+</div>
+</section>
+
+<section id="places">
+<h2 class="title">Địa điểm du lịch nổi bật</h2>
+<p class="intro">Cùng khám phá những điểm đến nổi tiếng của An Giang qua hình ảnh thực tế.</p>
+
+<div class="grid">
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Phong%20c%E1%BA%A3nh%20n%C3%BAi%20C%E1%BA%A5m.jpg?width=1200" alt="Phong cảnh núi Cấm">
+<div class="card-content">
+<span class="tag">Thiên nhiên</span>
+<h3>Núi Cấm</h3>
+<p>Núi Cấm thuộc vùng Thất Sơn, nổi tiếng với cảnh quan núi rừng, khí hậu mát mẻ và các điểm tham quan tâm linh.</p>
+<p class="sources">Ảnh: Wikimedia Commons</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://vov4.vov.vn/sites/default/files/styles/large_watermark/public/2024-07/1_10.jpg" alt="Cổng Miếu Bà Chúa Xứ Núi Sam">
+<div class="card-content">
+<span class="tag">Tâm linh</span>
+<h3>Miếu Bà Chúa Xứ Núi Sam</h3>
+<p>Đây là điểm hành hương nổi tiếng ở Châu Đốc, gắn liền với tín ngưỡng và lễ hội truyền thống của người dân Nam Bộ.</p>
+<p class="sources">Ảnh: Đỗ Quyên / VOV4</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/R%E1%BB%ABng%20Tr%C3%A0m%20Tr%C3%A0%20S%C6%B0.JPG?width=1200" alt="Rừng tràm Trà Sư">
+<div class="card-content">
+<span class="tag">Sinh thái</span>
+<h3>Rừng tràm Trà Sư</h3>
+<p>Điểm du lịch sinh thái nổi bật với hệ sinh thái rừng tràm, thảm bèo xanh và cảnh quan thiên nhiên vùng ngập nước.</p>
+<p class="sources">Ảnh: Wikimedia Commons</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%A0%20P%E1%BA%A1.%20An%20Giang.%20Vi%E1%BB%87t%20Nam%20%2815124928859%29.jpg?width=1200" alt="Hồ Tà Pạ An Giang">
+<div class="card-content">
+<span class="tag">Cảnh đẹp</span>
+<h3>Hồ Tà Pạ</h3>
+<p>Hồ Tà Pạ ở Tri Tôn thu hút du khách bởi cảnh quan hồ nước, núi đá và đồng ruộng xung quanh.</p>
+<p class="sources">Ảnh: Bem photography / Wikimedia Commons</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%B9a%20T%C3%A2y%20An%20n%C3%BAi%20Sam.jpg?width=1200" alt="Chùa Tây An Núi Sam">
+<div class="card-content">
+<span class="tag">Kiến trúc</span>
+<h3>Chùa Tây An</h3>
+<p>Ngôi chùa nổi tiếng tại khu vực Núi Sam, có kiến trúc đặc sắc và giá trị văn hóa, tín ngưỡng.</p>
+<p class="sources">Ảnh: Wikimedia Commons</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/N%C3%BAi%20C%E1%BA%A5m%20An%20Giang%20Vi%E1%BB%87t%20Nam.jpg?width=1200" alt="Cảnh núi Cấm An Giang">
+<div class="card-content">
+<span class="tag">Khám phá</span>
+<h3>Vùng Thất Sơn</h3>
+<p>Thất Sơn là vùng núi nổi tiếng của An Giang, gắn với cảnh quan đặc trưng và nhiều câu chuyện dân gian địa phương.</p>
+<p class="sources">Ảnh: Wikimedia Commons</p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="culture" class="about">
+<h2 class="title">Văn hóa An Giang</h2>
+<div class="intro">
+<p>An Giang là nơi giao thoa văn hóa của nhiều cộng đồng dân cư, trong đó có người Kinh, Khmer, Chăm và Hoa. Sự đa dạng này thể hiện qua kiến trúc, tín ngưỡng, lễ hội, trang phục và ẩm thực.</p>
+<br>
+<p>Khi tham quan nơi thờ tự, du khách nên ăn mặc lịch sự, giữ trật tự và tôn trọng phong tục địa phương.</p>
+</div>
+</section>
+
+<section id="food" class="food">
+<h2 class="title">Ẩm thực đặc sản</h2>
+<p class="intro">Ẩm thực góp phần tạo nên nét riêng của vùng đất An Giang.</p>
+<div class="grid">
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20c%C3%A1%20Ch%C3%A2u%20%C4%90%E1%BB%91c.jpg?width=1000" alt="Bún cá Châu Đốc">
+<div class="card-content">
+<h3>Bún cá Châu Đốc</h3>
+<p>Món bún nước nổi tiếng, thường ăn cùng cá và rau sống, có hương vị đặc trưng của miền Tây.</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20b%C3%B2%20th%E1%BB%91t%20n%E1%BB%91t.jpg?width=1000" alt="Bánh bò thốt nốt">
+<div class="card-content">
+<h3>Bánh bò thốt nốt</h3>
+<p>Món bánh làm từ nguyên liệu thốt nốt, thường có màu vàng nâu và vị ngọt thơm.</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20Ch%C3%A2u%20%C4%90%E1%BB%91c.jpg?width=1000" alt="Đặc sản mắm Châu Đốc">
+<div class="card-content">
+<h3>Mắm Châu Đốc</h3>
+<p>Đặc sản nổi tiếng của địa phương, được chế biến thành nhiều món ăn mang hương vị miền Tây.</p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="tips" class="tips">
+<h2 class="title">Kinh nghiệm du lịch</h2>
+<div class="intro">
+<ul style="display:inline-block;text-align:left;margin-top:15px">
+<li>Kiểm tra thời tiết và tuyến đường trước khi khởi hành.</li>
+<li>Chuẩn bị nước uống, nón và đồ chống nắng.</li>
+<li>Mặc trang phục lịch sự khi đến các địa điểm tâm linh.</li>
+<li>Hỏi giá trước khi sử dụng dịch vụ hoặc mua hàng.</li>
+<li>Không xả rác và cùng giữ gìn cảnh quan thiên nhiên.</li>
+<li>Kiểm tra giờ hoạt động và thông tin vé từ nguồn đáng tin cậy.</li>
+</ul>
+</div>
+</section>
+</main>
+
+<footer>
+<h3>🌿 KHÁM PHÁ AN GIANG</h3>
+<p>Thêm hiểu biết về quê hương — trân trọng thiên nhiên và văn hóa.</p>
+<p>Website phục vụ mục đích học tập và giới thiệu du lịch địa phương.</p>
+<p>Ảnh được ghi nguồn tại từng địa điểm.</p>
+</footer>
+
+</body>
+</html>
